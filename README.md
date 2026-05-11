@@ -1,49 +1,33 @@
 # MiniQR
 
-Minimalistic QR generator UI built with **Nuxt** + **Tailwind CSS** + **TypeScript**.
+Минимальный генератор QR‑кодов (текст/ссылка) на **Nuxt** + **Tailwind CSS** + **TypeScript**.
 
-> Add your screenshot below:
->
-> `![MiniQR screenshot](./docs/screenshot.png)`
+![Скриншот](miniqr-preview.png)
 
-## Features
+## Реализовано
 
-- Big QR code centered on the page
-- Actions: Share / Print / Download (PNG)
-- State in URL via `?s=...`
+- Большой QR по центру страницы
+- Кнопки: Поделиться / Печать / Скачать (PNG)
+- Состояние хранится в URL через `?s=...`
 
-## Requirements
+## Требования
 
-- Bun
+- Доступ к интернету
+- <a href="https://bun.sh">Bun.js</a>
 
-## Local development
+## Локальный запуск
 
 ```bash
 bun install
 bun run dev
 ```
 
-## Static build
+## Статическая сборка
 
 ```bash
 bun run generate
 ```
 
-Output is generated into `.output/public`.
+Результат сборки появляется в `.output/public`.
 
-## Deploy to GitHub Pages
-
-This repo includes a GitHub Actions workflow that builds and deploys the static site to **GitHub Pages**:
-
-- `.github/workflows/deploy-pages.yml`
-
-Steps:
-
-1. Push to the `main` branch.
-2. In GitHub: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-3. Wait for the `Deploy MiniQR UI to GitHub Pages` workflow to finish.
-
-The workflow automatically sets `NUXT_APP_BASE_URL`:
-- `/<repo>/` for normal repositories (`username.github.io/<repo>/`)
-- `/` for `username.github.io` repositories
-
+made by @syrochki
