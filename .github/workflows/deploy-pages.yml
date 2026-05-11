@@ -1,4 +1,4 @@
-name: Deploy MiniQR UI to GitHub Pages
+name: Deploy MiniQR to GitHub Pages
 
 on:
   push:
